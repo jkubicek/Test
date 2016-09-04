@@ -1,0 +1,14 @@
+# Install Swift Kitura
+
+sudo apt-get install libcurl4-openssl-dev uuid-dev
+sudo apt-get install clang libicu-dev
+sudo apt-get install libpython2.7
+curl -O https://swift.org/builds/development/ubuntu1510/swift-DEVELOPMENT-SNAPSHOT-2016-08-23-a/swift-DEVELOPMENT-SNAPSHOT-2016-08-23-a-ubuntu15.10.tar.gz
+tar -xvzf swift-DEVELOPMENT-SNAPSHOT-2016-08-23-a-ubuntu15.10.tar.gz
+
+# Symlink Swift
+ln -s /root/swift-DEVELOPMENT-SNAPSHOT-2016-08-23-a-ubuntu15.10/usr/bin/swift /usr/bin/
+
+# Check the installation
+swift --version
+
